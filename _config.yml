@@ -1,0 +1,40 @@
+title: Germano Smaniotto
+description: Machine Learning Engineer, occasional writer, human.
+url: "https://complexfrequency.github.io"
+baseurl: "/website"
+
+author:
+  name: Germano Smaniotto
+  email: germsmaniotto@gmail.com
+
+github_username: ComplexFrequency
+linkedin_url: "https://www.linkedin.com/in/germano-smaniotto-17a0b5124/"
+
+permalink: /articles/:title/
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: article
+  - scope:
+      type: projects
+    values:
+      layout: project
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

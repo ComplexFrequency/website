@@ -1,0 +1,18 @@
+---
+layout: default
+title: Articles
+permalink: /articles/
+---
+<h1>Articles</h1>
+<p class="subtitle">Notes on my work, theory, and things I've learned the hard way.</p>
+
+<div class="article-list">
+  {% for post in site.posts %}
+  <article class="article-item">
+    <time class="post-date">{{ post.date | date: "%b %Y" }}</time>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p>{{ post.description }}</p>
+    <a class="more" href="{{ post.url | relative_url }}">Read more →</a>
+  </article>
+  {% endfor %}
+</div>

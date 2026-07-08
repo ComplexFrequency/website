@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% if page.portrait %}
+<img class="portrait" src="{{ page.portrait | relative_url }}" alt="Portrait of {{ site.author.name }}">
+{% else %}
+<div class="portrait-placeholder">[ portrait photo — drop in here ]</div>
+{% endif %}
+
+<h1>{{ page.title }}</h1>
+<p class="subtitle">{{ page.subtitle }}</p>
+
+<div class="prose">
+  {{ content }}
+</div>
