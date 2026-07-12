@@ -29,6 +29,11 @@ defaults:
 
 markdown: kramdown
 
+theme: null
+
+kramdown:
+  math_engine: mathjax
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -38,3 +43,5 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - vendor
+  - analysis

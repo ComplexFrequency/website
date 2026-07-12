@@ -32,6 +32,25 @@ Project write-up in Markdown.
 
 That's it — push to `main` and GitHub Pages rebuilds the site.
 
+**Math in posts** — set `math: true` in the front matter to load KaTeX on that page:
+
+```markdown
+---
+title: My Article Title
+math: true
+---
+
+Inline math like $$e^{i\pi} + 1 = 0$$ works in body text, and so does a display block:
+
+$$
+\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
+$$
+```
+
+kramdown picks inline vs. display based on where the `$$...$$` sits in the block. Inside raw HTML
+blocks (such as `<details>` asides), kramdown doesn't process Markdown, so use `\( ... \)` and
+`\[ ... \]` there instead of `$$`.
+
 ## Structure
 
 | Path | What it is |

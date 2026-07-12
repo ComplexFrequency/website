@@ -3,3 +3,9 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 .DS_Store
+analysis/evt/cache/
+analysis/evt/.venv/
+analysis/evt/__pycache__/
+analysis/evt/*.egg-info/
+vendor/bundle/
+.bundle/
